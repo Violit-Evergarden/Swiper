@@ -1,0 +1,60 @@
+.rightBtn{
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: cadetblue;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  transition: .3s;
+}
+.rightBtn:hover{
+  background-color: rgb(205, 211, 214);
+}
+
+.leftBtn{
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: cadetblue;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  transition: .3s;
+}
+.leftBtn:hover{
+  background-color: rgb(205, 211, 214);
+}
+
+.oracleBox{
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.oracle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(167, 167, 167);
+  list-style: none;
+  cursor: pointer;
+}
+.activeOracle{
+  background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    body{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+
+    }
+    #swiper{
+      position: relative;
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+    }
+    #swiper2{
+      position: relative;
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+    }
+    #swiperWrap{
+      height: 400px;
+      width: 2400px;
+      display:flex;
+    }
+    .swiper-item{
+      width: 600px;
+      height: 400px;
+    }
+    img{
+      width: 600px;height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="swiper">
+    <div id="swiperWrap">
+      <div class="swiper-item" style="background-color: rgb(127, 157, 255);">
+        <img src="./img/album2.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(13, 116, 38);">
+        <img src="./img/v2-9516e0d843b1827e5a6e3e89743d17e0_r.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(255, 127, 249);">
+        <img src="./img/bf78d3f72e56ec4fd0588e6120b47abe1235348690.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(188, 236, 12);">
+        <img src="./img/QQ截图20221219213041.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="swiper2">
+    <div id="swiperWrap">
+      <div class="swiper-item" style="background-color: rgb(127, 157, 255);">
+        <img src="./img/album2.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(13, 116, 38);">
+        <img src="./img/v2-9516e0d843b1827e5a6e3e89743d17e0_r.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(255, 127, 249);">
+        <img src="./img/bf78d3f72e56ec4fd0588e6120b47abe1235348690.jpg" alt="">
+      </div>
+      <div class="swiper-item" style="background-color: rgb(188, 236, 12);">
+        <img src="./img/QQ截图20221219213041.png" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script>
+    let swiper = new Swiper('#swiper',{
+      speed:500,
+      delay:1500
+    })
+    new Swiper('#swiper2')
+  </script>
+</body>
+</html>
